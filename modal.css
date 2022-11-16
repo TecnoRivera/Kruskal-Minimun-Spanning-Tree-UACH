@@ -25,6 +25,7 @@
 .modal-header{
     display: grid;
     grid-template-columns: 1fr [close-button] 1.25rem;
+    grid-template-columns: 1fr [info-button] 1.25rem;
     justify-content: flex-start;
     align-items: center;
     padding: var(--margin-1);
@@ -35,8 +36,24 @@
 .modal-danger .modal-header{
     background-color: var(--color-red-1);
 }
+.modal-info .modal-header{
+    background-color: var(--color-red-1);
+}
 .modal-close-button{
     grid-column: close-button;
+    width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    --color-button: var(--color-red-1);
+}
+.modal-info-button{
+    grid-column: info-button;
     width: 100%;
     /* height: 100%; */
     aspect-ratio: 1;
